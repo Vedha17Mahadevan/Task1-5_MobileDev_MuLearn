@@ -1,0 +1,23 @@
+void processList(List<int> numbers, int Function(int) operation) {
+  for (var number in numbers) {
+    print('Input: $number → Output: ${operation(number)}');
+  }
+  print("");
+}
+
+void main() {
+
+  List<int> list1 = [1, 2, 3, 4, 5];
+  List<int> list2 = [10, 20, 30, 40, 50];
+
+  print('Doubling each number:');
+  processList(list1, (int number) => number * 2);
+
+  print('Squaring each number:');
+  processList(list1, (int number) => number * number);
+
+  print('Negating each number:');
+  processList(list2, (int number) => -number);
+}
+
+
