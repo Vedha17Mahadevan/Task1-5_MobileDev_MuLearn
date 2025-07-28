@@ -1,0 +1,5 @@
+name: lock_and_key
+description: A Dart utility for generating and validating passwords.
+version: 1.0.0
+environment:
+  sdk: '>=2.17.0 <4.0.0'
